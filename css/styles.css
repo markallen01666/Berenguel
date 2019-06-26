@@ -1,0 +1,39 @@
+/* Define header image properties */
+/* header {
+  background: url('../assets/images/patrick-tomasso-1422984-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+}
+*/
+footer {
+  height: 100px;
+}
+p {
+  font-size: 1em;
+}
+.section {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+.details {
+  padding-top: 1vh;
+  padding-bottom: 3vh;
+}
+.tabs .indicator {
+  background-color: #1a237e;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background: transparent;
+} 
+/* Media queries for smaller displays */
+@media screen and (max-width: 950px) {
+  header {
+    min-height: 650px;
+  }
+}
+@media screen and (max-width: 670px) {
+  header {
+    min-height: 500px;
+  }
+}
