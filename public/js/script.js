@@ -9,10 +9,14 @@ document.addEventListener("DOMContentLoaded", function() {
   var parallaxInstances = M.Parallax.init(parallax);
   var tabs = document.querySelectorAll('.tabs');
   var tabsInstances = M.Tabs.init(tabs);
-  var datepicker = document.querySelectorAll('.datepicker');
-  var datepickerInstance = M.Datepicker.init(datepicker, {
-    disableWeekends: true
-  });
+  var carousel = document.querySelectorAll('.carousel');
+  var carouselInstances = M.Carousel.init(carousel, {numVisible:13, fullWidth: true, duration: 10000});
+  var carouselElem = document.getElementById("carousel-auto")
+  var carouselInstance = M.Carousel.getInstance(carouselElem);  
+  setInterval(function() {
+    carouselInstance.next();
+  }, 10500);
+  carouselInstance.next();
   var scrollspy = document.querySelectorAll('.scrollspy');
   var scrollspyInstances = M.ScrollSpy.init(scrollspy);
 });

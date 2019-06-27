@@ -1,15 +1,24 @@
 /* Define header image properties */
-/*
-header {
+/* header {
   background: url('../assets/images/patrick-tomasso-1422984-unsplash.jpg');
   background-size: cover;
   background-position: center;
   min-height: 800px;
 }
 */
+footer {
+  height: 100px;
+}
+p {
+  font-size: 1em;
+}
 .section {
   padding-top: 4vw;
   padding-bottom: 4vw;
+}
+.details {
+  padding-top: 1vh;
+  padding-bottom: 3vh;
 }
 .tabs .indicator {
   background-color: #1a237e;
