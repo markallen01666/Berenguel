@@ -32,18 +32,18 @@
     <header>
       <div class="navbar-fixed">
         <nav class="nav-wrapper grey darken-3">
-          <div class="container">
+          <div class="container hide-on-med-and-down">
             <a href="index.html" class="brand-logo">Marisela Berenguel</a>
-            <a href="" class="sidenav-trigger" data-target="mobile-menu">
-              <i class="material-icons">menu</i>
-            </a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="index.html#projects">Projects</a></li>
+            <ul class="right">
+              <li><a href="index.html#work">Work</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="index.html#contact">Contact</a></li>
             </ul>
-            <ul class="sidenav grey lighten-2 white-text" id="mobile-menu">
-              <li><a href="index.html#projects">Projects</a></li>
+          </div>
+          <div class="container hide-on-large-only">
+            <strong><a href="index.html">Berenguel</a></strong>
+            <ul class="right">
+              <li><a href="index.html#work">Work</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="index.html#contact">Contact</a></li>
             </ul>
@@ -102,8 +102,7 @@
     </div>
 
     <!-- Gallery section -->
-    <section class="container section scrollspy" id="projects">
-      <h2 class="center-align">Projects</h2>
+    <section class="container section scrollspy" id="work">
       <div class="row">
         <div class="col s12 m3">
           <a href="self-portrait.html">
@@ -175,7 +174,7 @@
             <div class="card small yellow lighten-5">
               <div class="card-image">
                 <img
-                  src="assets/images/Enumeration of transparecies card.jpg"
+                  src="assets/images/swimmers card.jpg"
                 />
               </div>
               <div class="card-content">
@@ -313,8 +312,7 @@
                 />
               </div>
               <div class="card-content">
-                <p><strong>Enumeration of transparencies</strong></p>
-                <p><em>Enumeraciones de transparencias</em></p>
+                <p><strong>Enumeraciones de transparencias</strong></p>
               </div>
             </div>
           </a>
@@ -333,10 +331,13 @@
     <section class="section container scrollspy" id="contact">
       <div class="row">
         <div class="col s12 l5">
-          <h2 class="grey-text text-darken-4">Get In Touch</h2>
+          <h4 class="grey-text text-darken-4">Get In Touch</h4>
         </div>
         <div class="col s12 l5 offset-l2">
-          <form action="https://formspree.io/marisela@berenguel.co.uk" method="POST">
+          <form
+            action="https://formspree.io/marisela@berenguel.co.uk"
+            method="POST"
+          >
             <!-- Contact email address -->
             <div class="input-field">
               <i class="material-icons prefix">email</i>
@@ -346,7 +347,11 @@
             <!-- Contact message -->
             <div class="input-field">
               <i class="material-icons prefix">message</i>
-              <textarea id="message" class="materialize-textarea" name="message"></textarea>
+              <textarea
+                id="message"
+                class="materialize-textarea"
+                name="message"
+              ></textarea>
               <label for="message">Your message</label>
             </div>
             <!-- Submit button -->
